@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksplorimi Planeteve</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('planets.jpg'); /* Set the planets exploration background photo */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background color for better readability */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .menu-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: transparent;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 2; /* Ensure the button appears above the background */
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background color for better readability */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: none; /* Hide the menu by default */
+            position: absolute;
+            top: 70px; /* Adjust this value based on your design */
+            left: 20px; /* Adjust this value based on your design */
+            z-index: 2; /* Ensure the menu appears above the background */
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .submenu {
+            display: none;
+            background-color: #555;
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+        .submenu a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        nav li:hover .submenu {
+            display: block;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            position: relative;
+            z-index: 1;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        .planet {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 20px auto;
+            max-width: 300px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background color for better readability */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .planet img {
+            max-width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .planet-name {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .planet-description {
+            margin-top: 10px;
+            text-align: justify;
+        }
+        footer {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background color for better readability */
+            color: #fff;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+<header style="background-image: url('planets-exploration-background.jpg'); background-size: cover; background-position: center; height: 300px; position: relative;">
+    <div style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        <img src="planetet.jpg" alt="Header Photo" style="width: 100%;background-size: cover; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+        <button class="menu-button" onclick="toggleMenu()" style="position: absolute; top: 20px; left: 20px; background-color: transparent; color: #fff; border: none; cursor: pointer;font-size: 18px; z-index: 2;">Menu</button>
+        <h1 style="font-size: 48px; color: #fff;font-family: 'Times New Roman', Times, serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5): 20px; position: absolute; bottom: 100px; left: 50%; transform: translateX(-50%); z-index: 2;">Eksplorimi i Universit</h1>
+    </div>
+</header>
+
+    
+
+</header>
+
+<nav id="main-nav">
+    <ul>
+        <li><a href="#">Planets</a>
+            <ul class="submenu">
+                <li><a href="#merkuri">Merkuri</a></li>
+                <li><a href="#venus">Venus</a></li>
+                <li><a href="#Toka">Toka</a></li>
+                <li><a href="#mars">Mars</a></li>
+                <li><a href="#jupiter">Jupiter</a></li>
+                <li><a href="#saturn">Saturn</a></li>
+                <li><a href="#urani">urani</a></li>
+                <li><a href="#neptune">Neptune</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Other Options</a>
+            <ul class="submenu">
+                <li><a href="#">Sistemi Djellor</a></li>
+                <li><a href="#">Galaktikat</a></li>
+                <li><a href="#">Vrimat e zeza</a></li>
+            </ul>
+        </li>
+    <ul>
+        <li><a href="#">About Us</a>
+            </li>
+</ul>
+    <ul>
+        <li><a href="#">Contact</a>
+</nav>
+
+<main>
+    <section id="merkuri">
+        <h2>Merkuri</h2>
+        <div class="merkuri">
+            <img src="merkuri.jpg" alt="Merkuri">
+            <p class="planet-name">Merkuri</p>
+        </div>
+        <p class="planet-description">Mërkuri është planeti me i afert me Diellin dhe nje nga planetet me te nxehte dhe me te ftohte njekohesisht dhe gjithashtu planeti më i vogël në Sistemin Diellor,[1] Mërkuri kryen orbitën rreth Diellit një herë në 87.969 ditë duke kompletuar tre rrotullime rreth aksit në çdo dy orbita..</p>
+    </section>
+
+    <section id="venus">
+        <h2>Venus</h2>
+        <div class="Venus">
+            <img src="venus.jpg" alt="Venus">
+            <p class="planet-name">Venus</p>
+        </div>
+        <p class="planet-description">Venusi ose Afërdita është planeti i dytë nga Dielli, që e orbiton atë çdo 224,7 ditë tokësore. Venusi nuk ka satelit natyror. Ai është emëruar sipas perëndeshës romake të dashurisë dhe bukurisë Venera. Pas Hënës, është objekti më i shndritshëm natyror në qiellin e natës, duke arritur një madhësi të dukshme prej -4.6, ndriçim i mjaftueshëm për të bërë hije.</p>
+    </section>
+
+    <section id="Toka">
+        <h2>Toka</h2>
+        <div class="Toka">
+            <img src="Toka.jpg" alt="Toka">
+            <p class="planet-name">Toka</p>
+        </div>
+        <p class="planet-description">Toka (simboli astronomik: m) është planeti i tretë i sistemit tonë diellor. Toka është rreth 4.6 miliardë vjet e vjetër, dhe i vetmi planet në Sistemin tonë Diellor ku është zhvilluar jeta. Toka ka vetëm një satelit natyror: Hënën. Toka peshon 600000 miliard ton dhe është afër 40000km rreth ekuatorit. Supozohet që, krijimi i Tokës erdhi si rezultat i ngjarjeve që pasuan Big Beng-un .</p>
+    </section>
+
+    <section id="mars">
+        <h2>Mars</h2>
+        <div class="mars">
+            <img src="mars.jpg" alt="Mars">
+            <p class="planet-name">Mars</p>
+        </div>
+        <p class="planet-description">Marsi është planeti i 4 nga Dielli dhe i 7 për madhësi dhe ka 2 Hëna ose sic quhen ndryshe Satelitë të vegjel, që rrotullohen rreth tij.Distanca: 228,940,000 km (1.52 AU) Nga Dielli
+
+            Distanca: 58.000.000 Km deri ne 402.000.000 km nga Toka
+            
+            Diametri: 6,794 km
+            
+            Masa: 6.4219e23 kg</p>
+    </section>
+
+    <section id="jupiter">
+        <h2>Jupiter</h2>
+        <div class="jupiter">
+            <img src="jupiter.jpg" alt="Jupiter">
+            <p class="planet-name">Jupiter</p>
+        </div>
+        <p class="planet-description">Jupiteri ose Enjti është planeti i 5-të nga Dielli dhe më i madhi nga të gjithë tjerët në sistemin diellor. Jupiteri është më shumë së dy herë më i madh së sa planetët e tjerë, dhe 319 herë më i madh se sa Toka.
+
+            Jupiteri ka 63 hëna ose siç quhen ndryshe satelitë,që rrotullohen rreth tij. Shumica prej tyre janë shumë të vegjël në krahasim me disa nga Hënat e mëdha..</p>
+    </section>
+
+    <section id="saturn">
+        <h2>Saturn</h2>
+        <div class="saturn">
+            <img src="saturn.jpg" alt="Saturn">
+            <p class="planet-name">Saturn</p>
+        </div>
+        <p class="planet-description">Saturni ose Shtuni (dikur Shëtuni) një planet i Sistemit Diellor. Ai është planeti i gjashtë për nga largësia nga Dielli. U emërtua sipas zotit romak Saturnus, i quajtur Kronos në mitologjinë greke. Simboli i Saturnit është ♄, që është simboli i drapërit të Saturnusit.Saturni është planeti i dytë për nga madhësia në Sistemin Diellor pas Jupiterit. .</p>
+    </section>
+
+    <section id="urani">
+        <h2>Urani</h2>
+        <div class="Urani">
+            <img src="uranus.jpg" alt="Uranus">
+            <p class="planet-name">urani</p>
+        </div>
+        <p class="planet-description">Urani, Vrënji ose Vranji është planeti i 7-të nga dielli dhe i 3-ti më i madh (me diametër). Urani është më i madh në diametër, por më i vogël në peshë së Neptuni.
+
+
+            Distanca : 2.870.990.000 km nga Dielli
+            
+            Distanca : 2.574.950.400 nga Toka
+            
+            Diametri : 51.118 km
+            
+            Masa : 8,683e25 kg.</p>
+    </section>
+
+    <section id="neptune">
+        <h2>Neptune</h2>
+        <div class="neptune">
+            <img src="neptune.jpg" alt="Neptune">
+            <p class="planet-name">Neptune</p>
+        </div>
+        <p class="planet-description">Neptuni është planeti i tetë në sistemin diellor. Është emërtuar sipas Neptunit, perëndia greke e detit dhe ujit të rrjedhshëm.
+
+            Neptuni është planeti i tetë për largësinë nga Dielli në Sistemin tonë Diellor. Mban emrin e zotiti grek të detrave, ai është planeti i katërt më i madh nga diametri dhe i treti më i madh nga masa. Neptuni është 17 herë me i madh se masa e Tokës dhe është pak më masiv se Urani .</p>
+    </section>
+
+</main>
+
+<footer>
+    &copy; 2024 Planets Exploration
+</footer>
+
+<script>
+    function toggleMenu() {
+        var nav = document.getElementById("main-nav");
+        if (nav.style.display === "block") {
+            nav.style.display = "none";
+        } else {
+            nav.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
